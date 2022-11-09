@@ -4,7 +4,7 @@ const config = {
   host: 'bodymaiu.beget.tech',
   user: process.env.DB_NAME,
   database: process.env.DB_NAME,
-  password: 'Illidan228'
+  password: process.env.DB_PASSWORD
 }
 
 async function start(ctx) {
