@@ -19,10 +19,10 @@ const sendTextWithButtonAfterExtURL = async (ctx, postBody, buttons, extURL, del
           if (voices) {
             ctx.replyWithVoice({ source: voices})
               .then(() => {
-                sendTextWithButton(ctx, postBody, buttons)
+                sendTextWithButton(ctx, postBody, buttons, true)
               })
           } else {
-            sendTextWithButton(ctx, postBody, buttons)
+            sendTextWithButton(ctx, postBody, buttons, true)
           }
         }, delay)
       })
